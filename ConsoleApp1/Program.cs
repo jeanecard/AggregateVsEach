@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace ConsoleApp1
 {
@@ -65,23 +66,17 @@ namespace ConsoleApp1
         }
         private static void CalculFactureForEach(List<Item> commande)
         {
-            var seed = new Facture();
+            var facture = new Facture();
             foreach(var item in commande)
             {
-
+                facture.MontantDeBannanes += item.QuantiteBannanes;
+                facture.MontantDeFraises += item.QuantiteFraises;
+                facture.MontantDeSaucisses += item.QuantiteSaucisses * 2; //les saucisses comptent double.
             }
 
-            var factureFinale = commande.Aggregate(seed, (facture, item) =>
-            {
-                seed.MontantDeBannanes += item.QuantiteBannanes;
-                seed.MontantDeFraises += item.QuantiteFraises;
-                seed.MontantDeSaucisses += item.QuantiteSaucisses * 2; //les saucisses comptent double.
-                return facture;
-            });
-
-            Console.WriteLine($"Item Final Foreach : Banannes {factureFinale.MontantDeBannanes}" +
-                $", Fraises {factureFinale.MontantDeFraises}" +
-                $", Saucisse {factureFinale.MontantDeSaucisses}");
+            Console.WriteLine($"Item Final Foreach : Banannes {facture.MontantDeBannanes}" +
+                $", Fraises {facture.MontantDeFraises}" +
+                $", Saucisse {facture.MontantDeSaucisses}");
         }
     }
 }
