@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AggregateVsForEach", "ConsoleApp1\AggregateVsForEach.csproj", "{B7B02503-CAC3-4EC7-9DD6-945BD703B02B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7B02503-CAC3-4EC7-9DD6-945BD703B02B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B02503-CAC3-4EC7-9DD6-945BD703B02B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B02503-CAC3-4EC7-9DD6-945BD703B02B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B02503-CAC3-4EC7-9DD6-945BD703B02B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8476A6E0-234C-46A2-AC63-40009AFDAF59}
+	EndGlobalSection
+EndGlobal
